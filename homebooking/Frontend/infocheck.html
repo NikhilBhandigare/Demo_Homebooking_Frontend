@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+
+    <link rel="stylesheet" href="reg.css">
+
+    <style>
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 30px;
+        margin-top: 5%;
+        margin-left: 10px;
+      }
+    
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 30px;
+      }
+      
+      .home {
+        background-image: url("../image/home.png");
+        height: 100vh;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+      }
+      
+      .home h1 {
+        font-family: 'Great Vibes', cursive;
+        font-size: 150px;
+        color: white;
+        padding-top: 10%;
+      }
+      
+      .home p {
+        color: white;
+      }
+      
+      .home .content {
+        text-align: left;
+        color: black;
+        margin-top: 7%;
+      }
+      
+      .home .box {
+        background: white;
+        padding: 35px;
+      }
+      
+      .home input {
+        margin-top: 10px;
+      }
+      
+      input {
+        border: none;
+        outline: none;
+      }
+      
+      button {
+        background: antiquewhite;
+        color: black;
+        font-weight: bold;
+        padding: 10px 20px;
+        outline: none;
+        border: none;
+        border-radius: 30px;
+      }
+      button:hover{
+        background: transparent;
+      }
+      
+      button i {
+        margin-left: 20px;
+        font-size: 25px;
+      }
+      
+      button span {
+        margin-top: 5px;
+       
+      }
+    
+      
+    
+      .box{
+        border: 2px solid black;
+        width: 200px;
+        text-align: center;
+        padding: 30px;
+        background: linear-gradient(to right,#00093c, #2d0b00);
+        color: white;
+        border-radius: 20px;
+        box-shadow: 0 21px 35px rgb(0 0 0 / .10);
+      }
+    
+      /* ///////////////////////////////// */
+    
+      .top {
+        margin-top: 80px;
+      }
+      
+      .mtop {
+        margin-top: 40px;
+      }
+      
+      .heading {
+        text-align: center;
+      }
+      
+      .heading h5 {
+        font-weight: 400;
+        letter-spacing: 5px;
+        color: black;
+        padding-top: 20px;
+      }
+      
+      .heading h2 {
+        color: #24416B;
+        font-size: 45px;
+        font-family: serif;
+        font-weight: bold;
+        margin: 10px 0 20px 0;
+      }
+      
+      .left, .right {
+        width: 50%;
+      }
+      
+      h3 {
+        font-size: 35px;
+        font-family: serif;
+        color: #24416B;
+        margin-bottom: 20px;
+      }
+      
+      .about .left {
+        padding: 20px;
+      }
+      
+      p {
+        line-height: 30px;
+        color: white;
+        margin-bottom: 20px;
+        font-size: 15px;
+      }
+      
+      .about {
+        position: relative;
+        padding-bottom: 70px;
+      }
+      
+      .about .right {
+        position: relative;
+      }
+      
+      .about .right::after {
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: 0;
+        background: #CC8C18;
+        margin-left:850px;
+         margin-top: -400px;
+        width: 83%;
+        height: 61vh;
+        z-index: -1;
+        
+      }
+      
+      .about::after {
+        content: '';
+        position: absolute;
+        top: -5%;
+        left: 0;
+       
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 50px;
+        width: 100%;
+      }
+      
+      .about::before {
+        content: '';
+        position: absolute;
+        bottom: -5%;
+        left: 0;
+        
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 50px;
+        width: 100%;
+      }
+      
+      /*------------about------------*/
+      /*------------wrapper------------*/
+      .wrapper {
+        background-image: url("w.jpg");
+        height: 80vh;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #CC8C18;
+    
+        
+      }
+      p{
+        color: black;
+      }
+      
+      .wrapper .container {
+        max-width: 50%;
+        margin: auto;
+      }
+      
+      .wrapper .item {
+        background: white;
+        padding: 50px;
+        margin-top: 15%;
+        border: 30px solid #F3F3F3;
+        border-bottom: none;
+        border: 2px;
+      }
+      
+      .wrapper .heading {
+        text-align: left;
+      }
+      
+      .owl-nav .owl-next,
+      .owl-nav .owl-prev {
+        height: 47px;
+        position: absolute;
+        top: 60%;
+        width: 26px;
+        cursor: pointer;
+        background: none;
+      }
+      
+      .owl-nav .owl-prev {
+        left: 0;
+      }
+      
+      .owl-nav .owl-next {
+        right: 53px;
+      }
+      
+      .owl-nav .owl-next i,
+      .owl-nav .owl-prev i {
+        background: white;
+        padding: 7px;
+        border-radius: 50%;
+        color: #CC8 C18;
+        box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.05);
+        transition: 0.5s;
+      }
+      
+      .owl-nav .owl-next i:hover,
+      .owl-nav .owl-prev i:hover {
+        background: #CC8C18;
+        color: white;
+      }
+      .section{
+        background:#CC8C18 ;
+      }
+    
+      /*------------about------------*/
+    /*------------wrapper------------*/
+    .wrapper {
+      background-image: url("w.jpg");
+      height: 80vh;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    p{
+      color: white;
+    }
+    
+    .wrapper .container {
+      max-width: 50%;
+      margin: auto;
+    }
+    
+    .wrapper .item {
+      background: white;
+      padding: 50px;
+      margin-top: 15%;
+      border: 30px solid #F3F3F3;
+      border-bottom: none;
+    }
+    
+    .wrapper .heading {
+      text-align: left;
+    }
+    
+    .owl-nav .owl-next,
+    .owl-nav .owl-prev {
+      height: 47px;
+      position: absolute;
+      top: 60%;
+      width: 26px;
+      cursor: pointer;
+      background: none !important;
+    }
+    
+    .owl-nav .owl-prev {
+      left: 0;
+    }
+    
+    .owl-nav .owl-next {
+      right: 53px;
+    }
+    
+    .owl-nav .owl-next i,
+    .owl-nav .owl-prev i {
+      background: white;
+      padding: 7px;
+      border-radius: 50%;
+      color: #CC8C18;
+      box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.05);
+      transition: 0.5s;
+    }
+    
+    .owl-nav .owl-next i:hover,
+    .owl-nav .owl-prev i:hover {
+      background: #CC8C18;
+      color: white;
+    }
+    
+    /*------------wrapper------------*/
+    /*------------wrapper2------------*/
+    .wrapper2 {
+      position: relative;
+      text-align: center;
+    }
+    
+    .wrapper2 .grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .wrapper2 .box {
+      box-shadow: 0 0 20px 3px rgb(0 0 0 / 5%);
+      padding: 20px;
+      transition: 0.5s;
+      
+    }
+    
+    .wrapper2 i {
+      margin: 10px 0 15px 0;
+      color: #CC8C18;
+      font-size: 30px;
+    }
+    
+    .wrapper2 h3 {
+      font-size: 20px;
+    }
+    
+    .wrapper2 span {
+      padding: 10px;
+      background: #F5E8D1;
+      color: #CC8C18;
+      border-radius: 50%;
+    }
+    
+    .wrapper2 .box:hover {
+      background: #CC8C18;
+      cursor: pointer;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    </style>
+</head>
+<body>
+    <div class="content grid">
+        <div class="box">
+          <span>ARRIVAL DATE </span> <br>
+          <input type="date" placeholder="29/20/2021">
+        </div>
+        <div class="box">
+          <span>DEPARTURE DATE</span> <br>
+          <input type="date" placeholder="29/20/2021">
+        </div>
+        <div class="box">
+          <span>ADULTS</span> <br>
+          <input type="number" placeholder="01">
+        </div>
+        <div class="box">
+          <span>CHILDREN </span> <br>
+          <input type="number" placeholder="01">
+        </div>
+        <a href="reg1.html"> <div class="box">
+          <button class="flex1">
+            
+            <span style="font-size:15px;">Check Availability</span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div></a>
+      </div>
+    </div>
+  </section><br><br>
+  
+
+
+<div class="section">
+  <section class="about" id="about">
+    <div class="container">
+      <div class="heading">
+        <h5>EXPLORE</h5>
+        <h2>We are cool to give you pleasure
+        </h2>
+      </div>
+
+      <div class="content flex  top">
+        <div class="left">
+          <h3>As much as comfort want to get from us everything
+          </h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+          <a href="reg1.html"><button class="flex1">
+            
+            <span style="text-decoration: none; list-style: none; font-size:15px">Check Availability</span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button></a>
+        </div>
+        <div class="right">
+          <img src="image/a.png" alt="" style="margin-left:850px; margin-top: -400px;   background: linear-gradient(to right,#00093c, #2d0b00);">
+        </div>
+      </div>
+    </div>
+  </section>
+</div><br><br><hr>
+
+<div class="city">
+  <section class="wrapper">
+    <div class="container">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="heading">
+            <h5>THE CITY VIEW</h5>
+            <h3>A charming view of the city</h3>
+          </div>
+          <p style="color: black;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p style="color: black;"> Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+       
+      </div>
+    </div>
+  </section>
+</div><br>
+<br>
+
+<div class="bt">
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: false,
+      navText: ["<i class='far fa-long-arrow-alt-left'></i>", "<i class='far fa-long-arrow-alt-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+  <section class="wrapper2">
+    <div class="container">
+      <div class="heading mtop">
+        <h5>FACILITIES</h5>
+        <h2>Giving entirely awesome </h2>
+      </div>
+
+      <div class="content grid mtop">
+        <div class="box">
+          <i class="fas fa-shipping-fast"></i>
+          <h3>Pick Up & Drop</h3>
+          <p>parkn ipsum dolor sit amet, consectetur adiing elit sed do eiu</p>
+          <span class='fas fa-long-arrow-alt-right'></span>
+        </div>
+        <div class="box">
+          <i class="fas fa-mug-hot"></i>
+          <h3>Pick Up & Drop</h3>
+          <p>parkn ipsum dolor sit amet, consectetur adiing elit sed do eiu</p>
+          <span class='fas fa-long-arrow-alt-right'></span>
+        </div>
+        <div class="box">
+          <i class="fas fa-car"></i>
+          <h3>Pick Up & Drop</h3>
+          <p>parkn ipsum dolor sit amet, consectetur adiing elit sed do eiu</p>
+          <span class='fas fa-long-arrow-alt-right'></span>
+        </div>
+        <div class="box">
+          <i class="fas fa-water"></i>
+          <h3>Pick Up & Drop</h3>
+          <p>parkn ipsum dolor sit amet, consectetur adiing elit sed do eiu</p>
+          <span class='fas fa-long-arrow-alt-right'></span>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="roomwrapper">
+  <section class="room wrapper2 top" id="room">
+    <div class="container">
+      <div class="heading">
+        <h5>OUR ROOMS</h5>
+        <h2>Fascinating rooms & suites </h2>
+      </div>
+      <div class="content flex mtop" >
+        <div class="left grid2">
+          <div class="box"style="margin-left:10px;">
+            <i class="fas fa-desktop"></i>
+            <p>Free Cost</p>
+            <h3>No booking fee</h3>
+          </div>
+          <div class="box" style="margin-left:400px;margin-top:-208px;">
+            <i class="fas fa-dollar-sign"></i>
+            <p>Free Cost</p>
+            <h3>Best rate guarantee</h3>
+          </div>
+          <div class="box" style="margin-left:400px;margin-top:50px;">
+            <i class="fas fa-resolving"></i>
+            <p>Free Cost</p>
+            <h3>Reservations 24/7</h3>
+          </div>
+          <div class="box" style="margin-left:400px;margin-top:50px;">
+            <i class="fas fa-clock"></i>
+            <p>Free Cost</p>
+            <h3>High-speed Wi-Fi</h3>
+          </div>
+          <div class="box" style="margin-left:10px;margin-top:-460px;">
+            <i class="fas fa-mug-hot"></i>
+            <p>Free Cost</p>
+            <h3>Free breakfast</h3>
+          </div>
+          <div class="box"style="margin-left:10px;margin-top:50px;">
+            <i class="fas fa-user-tie"></i>
+            <p>Free Cost</p>
+            <h3>One person free</h3>
+          </div>
+        </div>
+        <div class="right">
+          <img src="image/r.jpg" alt="" style="margin-left: 700px; margin-top:-1600px; border:2px solid white">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+  
+</body>
+</html>

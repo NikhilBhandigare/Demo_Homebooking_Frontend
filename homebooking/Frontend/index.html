@@ -1,0 +1,531 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make a new website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="first_project.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            align-items: right;
+
+        }
+
+
+        header ul {
+            background-color: rgba(255, 255, 255, 0.484);
+            text-align: right;
+            height: 80px;
+            margin-top: 10px;
+            box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.251);
+
+
+        }
+
+        .icons {
+            color: transparent;
+            
+            font-size: 2rem;
+
+            margin-left: 1400px;
+            margin-top: -90px;
+            padding: 30px;
+
+
+        }
+
+        .icons div:hover {
+            color: red;
+        }
+
+        .main {
+            width: 100%;
+            height: 100vh;
+            background-image: url('image/imgfirst.webp');
+            background-position: center;
+            background-size: cover;
+            animation: change 15s infinite ease-in-out;
+        }
+
+
+
+        .main ul li {
+            list-style: none;
+            display: inline-block;
+            margin: 0px 20px;
+            margin-top: 25px;
+            color: black;
+            text-transform: uppercase;
+            position: relative;
+            text-decoration: none;
+            border: 1px solid transparent;
+            padding: 3px;
+            border-radius: 20px;
+        }
+
+        .main ul li:hover {
+            background-color: rgba(2, 2, 2, 0.2);
+        }
+
+
+        .logo {
+            width: 150px;
+            height: 130px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+
+        body {
+            border: 8px double white;
+
+        }
+
+        .content {
+            width: 100%;
+            position: absolute;
+            margin-top: 40px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+
+        .content h1 {
+            font-size: 50px;
+            margin-top: 60px;
+        }
+
+        .content p1 {
+            margin: 20px auto;
+            font: 100px;
+
+        }
+
+        button {
+            width: 200px;
+            padding: 15px 0;
+            text-align: center;
+            margin: 20px 10px;
+            border-radius: 25px;
+            font-weight: bold;
+            border: 3px solid whitesmoke;
+            background: black;
+            color: rgb(255, 248, 248);
+            cursor: pointer;
+
+            overflow: hidden;
+        }
+
+
+
+        button:hover span {
+            height: 100%;
+        }
+
+        button:hover {
+            border: none;
+            background: blue;
+        }
+
+        .search-form {
+            position: absolute;
+            margin-top: -80px;
+            margin-left: 600px;
+            margin-right: 560px;
+            color: white;
+
+        }
+
+        .search-form input {
+            border: 3px solid white;
+            background: rgba(5, 5, 5, 0.1);
+            text-align: center;
+            height: 20px;
+            width: 300px;
+            border-radius: 20px;
+            padding: 15px;
+            font-weight: bold;
+            color: white;
+        }
+
+
+  
+        .content {
+            width: 700px;
+            height: 320px;
+            padding: 10px;
+            margin-left: 400px;
+            border: 3px solid rgba(255, 249, 249, 0.443);
+            background-color: rgba(251, 249, 249, 0.669);
+            margin-top: 130px;
+            color: rgb(7, 6, 6);
+            border-radius: 20px;
+            float: right;
+            box-shadow: 0 0 20px 3px rgba(14, 10, 10, 0.388);
+
+        }
+
+
+
+        /* footer css */
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            background: #eef8ff;
+            top: 800px;
+
+        }
+
+        .logo1 {
+            width: 80px;
+            height: 90px;
+            margin-left: 25px;
+            margin-top: -60px;
+            margin-bottom: 30px;
+        }
+
+        footer {
+            width: 99%;
+            height: 450px;
+            margin-left: 0px;
+
+            position: absolute;
+            bottom: -378;
+            background: linear-gradient(to right, #00093c, #2d0b00);
+            color: white;
+            padding: 100px 0 30px;
+            border-radius: 2px;
+
+            font-size: 13px;
+            line-height: 20px;
+        }
+
+        .row {
+            width: 85%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        .col {
+            flex-basis: 25%;
+            padding: 10px;
+        }
+
+        .col:nth-child(2) {
+            flex-basis: 15%;
+        }
+
+        .col h3 {
+            width: fit-content;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .email-ID {
+            width: fit-content;
+            border-bottom: 1px solid white;
+            margin: 15px 0;
+        }
+
+        ul li {
+            list-style: none;
+            margin-bottom: 12px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        form {
+            padding-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 50px;
+        }
+
+        form .far {
+            font-size: 18px;
+            margin-right: 10px;
+        }
+
+        form input {
+            width: 100%;
+            background: transparent;
+            color: wheat;
+            border: 0;
+            outline: none;
+        }
+
+        form button {
+            background: transparent;
+            border: 0;
+            outline: none;
+            cursor: pointer;
+        }
+
+        form button .fas {
+            font-size: 16px;
+            color: wheat;
+        }
+
+        .social-icons .fab {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            font-size: 20px;
+            color: black;
+            background-color: white;
+            cursor: pointer;
+
+        }
+
+        hr {
+            width: 100%;
+            border: 20px;
+            border-bottom: 1px solid wheat;
+            margin: 20px 0;
+        }
+
+        .end {
+            text-align: center;
+        }
+
+        .underline {
+            width: 100%;
+            height: 5px;
+            background: #767676;
+            border-radius: 3px;
+            position: absolute;
+            top: 50px;
+            left: 0;
+        }
+
+        .underline span {
+            width: 15px;
+            height: 100%;
+            background: white;
+            border-radius: 3px;
+            position: absolute;
+            top: 0;
+            left: 10px;
+            animation: moving 2s linear infinite;
+            overflow: hidden;
+        }
+
+        @keyframes moving {
+            0% {
+                left: -20px;
+            }
+
+            100% {
+                left: 100%;
+            }
+        }
+
+        @media (max-width:700px) {
+            footer {
+                bottom: unset;
+            }
+
+            .col {
+                flex-basis: 100%;
+
+            }
+
+            .col:nth-child(2) {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="navbar">
+
+            <!-- <img src="image/homify.png" class="logo" height="10px" width="10px"> -->
+
+
+
+            <!-- <div class="search-form">
+                <input type="search" id="search-box" placeholder="search here......">
+                <label for="search-box" class="fas fa-search"></label>
+            </div> -->
+            <div class="icons">
+                <!-- <div class="fas fa-search" id="search-btn"></div> -->
+                <!-- <div class="fas fa-shopping-cart" id="cart-btn"></div> -->
+
+                <div class="fas fa-bars" id="menu-btn">
+
+                </div>
+            </div>
+
+
+            <div>
+                <header>
+
+                    <b>
+                        <ul>
+                            <!-- <li><img src="image/homify.png" class="logo" height="50px" width="50px"> -->
+                                <li style="margin-right: 650px; font-size:20px;color:black;" <i class="fas fa-house-circle-exclamation"></i>Visit Our Home</li>
+                            </li>
+                            <li><a href="https://www.homify.in/ideabooks/6141119/bedroom-design-inspirations-from-mumbai-homes"
+                                style="text-decoration: none; color:black; display:none">bedroom</a>
+                            </li>
+                            <li><a href="https://www.woodenstreet.com/modular-kitchen-designs"
+                                style="text-decoration: none; color:black;display:none">Kitchen</a></li>
+                                <li><a href="https://www.ikea.com/in/en/rooms/dining/"
+                                    style="text-decoration: none; color:black;display:none">Dining</a>
+                                </li>
+                                <li><a href="https://www.thespruce.com/backyard-landscaping-ideas-4172952"
+                                    style="text-decoration: none; color:black;display:none">Backyard</a>
+                                </li>
+                                <a href="./index.html"><li style="cursor: pointer;">Home</li></a>
+                            <li> <a href="./note.html"
+                                    style="text-decoration: none; color:black;">Notepad</a></li>
+                            <li><a href="./page.html"
+                                    style="text-decoration: none; color:black;">About Us</a>
+                            </li>
+
+                        </ul>
+
+
+
+                        <br>
+                    </b>
+
+
+                </header>
+
+            </div>
+        </div>
+
+        <div class="content">
+            <h1>BOOK YOUR HOUSE</h1>
+            <i>
+                <P style="font-size: 15px;">Welcoming Vastu in Your Home<br>The Spirit of Auspicious Luck & Wealth</P>
+            </i>
+            <div>
+                <a href="./watch.html">
+                    <button type="button"> WATCH MORE</button></a>
+                    <a href="./register.html">
+                        <button type="button" style="display:none">REGISTER</button></a>
+                <a href="./log.html">
+                    <button type="button"> LOGIN</button></a>
+
+            </div>
+        </div>
+        
+        <div>
+
+            <nav>
+
+                <!-- <ol class="ol">
+                        <h3>Containts</h3><br>
+                        <li  class="ol">History</li>
+                        <li class="ol">Furnishings</li>
+                        <li class="ol">Modern bedroom</li>
+                        <li class="ol">Culture</li>
+                        <li class="ol">Around the world </li>
+                        <li  class="ol">See also</li>
+                        <li  class="ol"> References</li>
+                        </ol> -->
+
+                <!-- <div>
+                        <p>On average, a standard bedroom measures around 202 square feet but it can range from 109 to
+                            299
+                            square feet depending on whether you live in an apartment or a house. According to the IRC,
+                            for
+                            habitable rooms like a bedroom, the standard ceiling height should be at least 7 inches. Of
+                            course, you can have a much higher ceiling than that.</p>
+                    </div> -->
+            </nav>
+
+        </div>
+
+
+    </div><br>
+
+
+    <!-- ///////////////////////////////////////footer///////////////////////////////////// -->
+
+
+    <footer>
+        <div class="row">
+            <div class="col">
+                <img src="./image/logo.png" class="logo1">
+                <p>On average, a standard bedroom measures around 202 square feet but it can range from 109 to
+                    299
+                    square feet depending on whether you live in an apartment or a house. According to the IRC,
+                    for
+                    habitable rooms like a bedroom</p>
+            </div>
+            <div class="col">
+                <h3>Office <div class="underline"><span></span></div>
+                </h3>
+                <p>ITPL Road</p>
+                <p>Whitefield, Mumbai</p>
+                <p>Maharashtra , India</p>
+                <p class="email-ID">nbhandigare1@gmail.com</p>
+                <h4>+91 - 7620593008</h4>
+            </div>
+            <div class="col">
+                <h3>Links <div class="underline"><span></span></h3>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Newsletter <div class="underline"><span></span></h3>
+                <form>
+                    <i class="far fa-envelope"></i>
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                </form>
+                <div class="social-icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-whatsapp"></i>
+                    <i class="fab fa-pinterest"></i>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="end">IF YOU LIKE MY WEB SITE THEN BOOK A HOUSE AS SOON AS POSSIBLE</p>
+    </footer>
+
+
+</body>
+<script src="./valid.js"></script>
+
+
+</html>

@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,600;1,300&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="stylesheet" href="first_project.css">
+    <title>Document</title>
+    <style>*{
+        margin: 0;
+    
+        box-sizing: border-box;
+        outline: none;
+    }
+    body{
+        font-family: sans-serif;
+        overflow-x: hidden;
+        padding: 100px;
+    }
+    .down{
+        margin-top: 50px;
+        margin-left: 200px;
+        margin-right: 200px;
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .dow{
+        margin-left: 50px;
+    }
+    img{
+        width: 100%;
+    }
+    .cards{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        
+    
+    }
+    .card{
+        position: relative;
+        width: 408px;
+        padding-bottom: 50px;
+        background-color: white;
+        box-shadow: 0 21px 35px rgb(0 0 0 / .10);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .card .text{
+        padding: 15px;
+    }
+    .card p{
+        font-size: 16px;
+        line-height: 30px;
+    
+    }
+    .card h2{
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    .card .more-btn{
+        width: 100px;
+        height: 100px;
+        background-color: brown;
+        border-radius: 50%;
+        position: absolute;
+        bottom: -60px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 60px;
+        color: white;
+        cursor: pointer;
+        z-index: 9;
+        font-size: 20px;
+        transition: all ease 0.5s;
+    
+    
+    }
+    .card .more-btn:hover{
+        background-color: #f7f7f7;
+        color: #ca7f04;
+    
+    }
+    .more-text{
+        position: absolute;
+       /* top: 0%; */
+        bottom: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color:  #669933;
+        padding: 15px;
+        overflow-y: auto;
+        transition: all ease 0.7s;
+    }
+    .more-text::-webkit-scrollbar{
+        width: 7px;
+        background-color: #b3b3b3;
+    
+    }
+    .more-text::-webkit-scrollbar-thumb{
+        background-color: #c76d06;
+    }
+    .more-text h2{
+        color: white;
+    }
+    .more-text p{
+        color: white;
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 500;
+    }
+    .more-text.active{
+        bottom: 0;
+    }
+    
+    /* ///////////////////////////////////////////// */
+    
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        /* background-color: antiquewhite; */
+    }
+    .head{
+       
+        margin-top: 30px;
+        font-size: 40px;
+        
+      
+        padding: 50px;
+        background-color: rgb(250, 180, 100);
+    }
+    .h3{
+        width: auto;
+        font-size: 20px;
+        padding: 40px;
+        background-color: rgb(250, 180, 100);
+    }
+    .h4{
+        width: auto;
+        margin-top: 40px;
+        font-size: 20px;
+        padding: 40px;
+        background-color: rgb(250, 180, 100);
+    }
+    .content1 {
+        display: flex;
+        margin-left: -40px;
+        /* justify-content: space-between; */
+    }
+    .content2{
+        margin-top: 40px;
+        display: flex;
+        margin-left: -45px;
+    }
+    .content3{
+        margin-left: 50px;
+        display: flex;
+        margin-left: -40px;
+    }
+    .content4{
+        display: flex;
+        margin-left: 120px;
+        margin-top: 45px;
+    }
+    .image{
+        width: 250px;
+        margin-left: 30px;
+        
+        border: 2px solid white;
+        border-radius: 8px ;
+        background-color: white;
+        box-shadow: 18px 27px 80px rgb(0 0 0 / .30);
+        overflow: hidden;
+        background-size: cover;
+        transition: 2s linear;
+        cursor: pointer;
+    }
+    .image:hover{
+        transform: scale(1.1);
+    }
+    .image1{
+        width: 300px;
+        margin-left: 40px;
+        
+        border: 2px solid white;
+        border-radius: 8px ;
+        background-color: white;
+        box-shadow: 18px 27px 80px rgb(0 0 0 / .30);
+        overflow: hidden;
+        background-size: cover;
+        transition: 5s linear;
+        cursor: pointer;
+    }
+    .image1:hover{
+        transform: scale(1.3);
+    }
+    .para{
+        text-align: center;
+        margin-top: 10px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    hr{
+        width: 100%;
+        border: 0;
+        border-bottom: 1px solid black;
+        margin: 30px 0px;
+       
+    }
+    header ul {
+        
+        text-align: right;
+        justify-content: center;
+        height: 80px;
+        width: 1500px;
+        margin-top: -30px;
+        margin-left: -90px;
+        background-color: rgba(255, 255, 255, 0.484);
+        box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.251);
+    
+    }
+    .main ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 0px 20px;
+        margin-top: 25px;
+        color: black;
+        text-transform: uppercase;
+        position: relative;
+        text-decoration: none;
+        border: 1px solid transparent;
+        padding: 3px;
+        border-radius: 20px;
+    }
+    .main ul li:hover{
+        background-color: rgba(210, 190, 170, 0.2);
+    }</style>
+</head>
+
+<body>
+    <div class="main">
+        
+        <div class="navbar">
+            
+            <!-- <img src="image/homify.png" class="logo"> -->
+            
+
+            
+            <!-- <div class="search-form">
+                <input type="search" id="search-box" placeholder="search here......">
+                <label for="search-box" class="fas fa-search"></label>
+            </div> -->
+            <div class="icons">
+                <!-- <div class="fas fa-search" id="search-btn"></div> -->
+                <!-- <div class="fas fa-shopping-cart" id="cart-btn"></div> -->
+
+                <!-- <div class="fas fa-bars" id="menu-btn"> -->
+                    
+                </div>
+            </div>
+
+
+                <div>
+                    <header>
+
+                        <b>
+                            <ul>
+                                <li style="margin-right: 350px; font-size:20px"<i class="fas fa-house-circle-exclamation"></i>Visit Our Home</li>
+                                <li ><a href="./index.html" style="text-decoration: none; color:black;"> Home</li></a>
+                                <li ><a
+                                        href="https://www.homify.in/ideabooks/6141119/bedroom-design-inspirations-from-mumbai-homes" style="text-decoration: none; color:black;">bedroom</a>
+                                </li>
+                                <li><a href="https://www.woodenstreet.com/modular-kitchen-designs" style="text-decoration: none; color:black;">Kitchen</a></li>
+                                <li><a href="https://www.ikea.com/in/en/rooms/dining/" style="text-decoration: none; color:black;">Dining</a>
+                                </li>
+                                <li><a href="https://www.thespruce.com/backyard-landscaping-ideas-4172952" style="text-decoration: none; color:black;">Backyard</a>
+                                </li>
+                                <li> <a href="./note.html" style="text-decoration: none; color:black;">Notepad</a></li>
+                                <li ><a
+                                    href="./page.html" style="text-decoration: none; color:black;">About Us</a>
+                            </li>
+                                
+                            </ul>
+
+                            
+
+                            <br>
+                        </b>
+
+
+                    </header>
+
+                </div>
+            </div>
+    <div class="first">
+        <div class="cards">
+            <div class="card">
+                <div class="img">
+                    <a href="last-booking-form.html">
+                    <img src="image/img1.webp" alt=""></a>
+                </div>
+                <div class="text">
+                    <h2>CONDOMINIUM :</h2>
+                    <p>A condominium is one home among many that are housed within a building or series of buildings on
+                        a given piece of land.
+
+                    </p>
+                    <div class="more-btn">
+                        <i class="fa fa-plus"></i>
+                    </div>
+                </div>
+
+                <div class="more-text">
+                    <h2>CONDOMINIUM :</h2>
+                    <p> Each condominium owner has the title to the unit, meaning that they own the unit. A condominium
+                        building is governed by an elected body (HOA in the United States, or Strata Council in Canada),
+                        which makes decisions on behalf of all unit owners and owns the communal areas and land where
+                        the condominium sits. This elected body makes decisions that pertain to maintenance, grounds,
+                        regulations, and more. <br>Duplex: A duplex condo refers to a two story condo unit. This often
+                        results from the joining of two separate units and renovating them into one larger unit.
+                        However, some duplex condos are initially built as two-story homes. <br>Triplex: This type of
+                        condo is the same as a duplex condo, but has three levels instead of two. <br>The terms “duplex”
+                        and “triplex” refer to the fact that these are two or three floor condos, as the terms are used
+                        in New York City. In other locations, the terms “duplex” and “triplex” refer to two and three
+                        unit buildings that stand side-by-side. Naturally, a fierce debate exists about the technical
+                        definitions, but in the current jargon, the terms are defined differently in different areas.
+                        <br>Some structures that appear to be townhouses (row house design) are technically condos. This
+                        is due to the fact that the owners only own the unit, and not the shared space.</p>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="img">
+                        <a href="last-booking-form.html">
+                        <img src="image/img2.webp" alt=""></a>
+                    </div>
+                    <div class="text">
+                        <h2>APARTMENT :</h2>
+                        <p>An apartment is a group of housing units in one building, all owned by one entity.
+
+                        </p>
+                        <div class="more-btn">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="more-text">
+                        <h2>APARTMENT :</h2>
+                        <p>The units are then rented out to tenants. This is the key difference between a condo and an
+                            apartment. In a condo, individual entities (i.e. a person or corporation) own each unit,
+                            whereas
+                            with apartments, all the units in the building are owned by one entity.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="img">
+                        <a href="last-booking-form.html">
+                        <img src="image/img3.webp" alt=""></a>
+                    </div>
+                    <div class="text">
+                        <h2>TOWNHOME :</h2>
+                        <p>Next up in this massive list of house types is the townhome. A townhome is similar to a row
+                            home in
+                            that it shares one or two walls with other homes.
+
+                        </p>
+                        <div class="more-btn">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                    </div>
+                    <div class="more-text">
+                        <h2>TOWNHOME :</h2>
+                        <p>Townhomes are usually two or three stories tall, but some stand even taller. These homes are
+                            different from condos in that owners of a townhome own both the interior and exterior of the
+                            unit,
+                            and are therefore financially responsible for maintenance of the exterior as well as the
+                            interior.
+                            With condos, the exterior of the building is maintained by the regulatory body (the HOA or
+                            Strata
+                            Council). <br> A townhome is more like a single-family home, except for its attachment to
+                            another
+                            unit on either one or both sides.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="down">
+                <div class="cards">
+                    <div class="card">
+                        <div class="img">
+                            <a href="last-booking-form.html">
+                            <img src="image/img4.webp" alt=""></a>
+                        </div>
+                        <div class="text">
+                            <h2>RANCH-STYLE :</h2>
+                            <p>A ranch-style home (AKA a rancher) is also a single-story home. However, a rancher has a
+                                larger, more rectangular footprint than a bungalow does.
+
+                            </p>
+                            <div class="more-btn">
+                                <i class="fa fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="more-text">
+                            <h2>RANCH-STYLE :</h2>
+                            <p>A ranch home, aka rancher, is usually defined as a house with a long profile, large
+                                windows, and generally an open layout. While a ranch home is almost always a one-story
+                                house, there are exceptions. There is what is called a “raised ranch.” A raised ranch
+                                normally has part of the home built over a finished basement. This is similar to what is
+                                referred to as a bi-level home. Ranch style homes were basically created for informal
+                                living in a suburban setting. Throughout the previous century, ranch style homes were
+                                one of the most popular housing styles in the United States. <br><br><b> What are the
+                                    Interior Features of a Ranch Home?<br></b>
+                                There are several features that would likely be found in a ranch home. Each of these
+                                interior features places an emphasis on simplicity and openness.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dow">
+                    <div class="cards">
+                        <div class="card">
+                            <div class="img">
+                                <a href="last-booking-form.html">
+                                <img src="image/img5.webp" alt=""></a>
+                            </div>
+                            <div class="text">
+                                <h2>Cottage :</h2>
+                                <p>The term cottage stems from a home commonly built in England.Fall in love with our
+                                    ultimate guide to Cottage home decor and style.
+
+                                </p>
+                                <div class="more-btn">
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                            </div>
+                            <div class="more-text">
+                                <h2>Cottage :</h2>
+                                <p>It’s a relaxed, laid-back and comfortable environment. Well-lived in. A vacation
+                                    place where you kick-back your shoes and unwind. There are flea market finds,
+                                    treasures upon treasures of bargains, repurposed bits, and pieces, wash and wear
+                                    fabrics, simple in aesthetics yet still exuding elegance, fun, and taste.
+
+                                    A cottage style home can have a broad range of looks and designs. They are typically
+                                    smaller than what we would consider a normal size house. When we think of them,
+                                    cabins, beaches and lakes often come to mind. They are a cozier type of home with
+                                    paneling or stone on the outside. They have a clean look and distinct geometrical
+                                    shapes giving them a unique look. While they are a stark contrast to contemporary
+                                    styling, they are beginning to pop up in more urban areas.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><br><br>
+            <hr>
+            <div class="body">
+                <div class="head">
+                    <p><b>Explore India </b><br>
+                        These popular destinations have a lot to offer</p>
+                </div>
+                <hr>
+                <div class="content1">
+                    <div class="image">
+                        
+                        <a href="last-booking-form.html"><img src="image/img01.webp" alt=""></a>
+                        <p class="para">Goa <br>
+                            2,151 Properties
+                        </p>
+
+                    </div>
+                    <div class="image">
+                        <a href="last-booking-form.html"><img src="image/img02.webp" alt=""></a>
+                        <p class="para">Mumbai <br>
+                            2,544 Properties
+                        </p>
+
+                    </div>
+                    <div class="image">
+                        <a href="last-booking-form.html"><img src="image/img03.webp" alt=""></a>
+                        <p class="para">New Delhi <br>
+                            2,913 Properties
+                        </p>
+
+                    </div>
+                    <div class="image">
+                       <a href="last-booking-form.html"> <img src="image/img04.webp" alt=""></a>
+                        <p class="para">Lonavala <br>
+                            750 Properties
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="image">
+                       <a href="last-booking-form.html"> <img src="image/img05.webp" alt=""></a>
+                        <p class="para">Banglore <br>
+                            2,039 Properties
+                        </p>
+
+                    </div>
+                </div>
+                <div class="content2">
+                    <div class="image">
+                       <a href="last-booking-form.html"> <img src="image/img06.webp" alt=""></a>
+                        <p class="para">Jaipur <br>
+                            1,558 Properties
+                        </p>
+
+                    </div>
+                    <div class="image">
+                        <a href="last-booking-form.html"><img src="image/img07.webp" alt=""></a>
+                        <p class="para">Pondicherry <br>
+                            692 Properties
+                        </p>
+                    </div>
+                    <div class="image">
+                        <a href="last-booking-form.html"><img src="image/img08.webp" alt=""></a>
+                        <p class="para">Udaipur <br>
+                            816 Properties
+                        </p>
+
+                    </div>
+                    <div class="image">
+                        <a href="last-booking-form.html"><img src="image/img09.webp" alt=""></a>
+                        <p class="para">Goa North <br>
+                            3,904 Properties
+                        </p>
+
+                    </div>
+                    <div class="image">
+                        <a href="last-booking-form.html"><img src="image/img10.webp" alt=""></a>
+                        <p class="para">Hydrabad <br>
+                            797 Properties
+                        </p>
+
+                    </div>
+
+                </div>
+                <hr>
+                <div class="h3">
+                    <h1>Browse by property type</h1>
+                </div>
+                <hr>
+                <div class="content3">
+
+                    <div class="image1">
+                       <a href="last-booking-form.html"> <img src="image/h1.jpeg" alt=""></a>
+                        <p class="para">Hotels <br>
+                            889,577 hotels</p>
+                    </div>
+                    <div class="image1">
+                        <a href="last-booking-form.html"><img src="image/h2.jpeg" alt=""></a>
+                        <p class="para">Apartments <br>
+                            917,577 Apartments</p>
+                    </div>
+                    <div class="image1">
+                        <a href="last-booking-form.html"><img src="image/h3.jpeg" alt=""></a>
+                        <p class="para">Resorts <br>
+                            18,187 Resorts</p>
+                    </div>
+
+                    <div class="image1">
+                        <a href="last-booking-form.html"><img src="image/h4.jpeg" alt=""></a>
+                        <p class="para">Villas <br>
+                            476,814 Villas</p>
+                    </div><br>
+
+                </div>
+                <div class="content4">
+                    <div class="image1">
+                        <a href="last-booking-form.html"><img src="image/h5.jpeg" alt=""></a>
+                        <p class="para">Hotels <br>
+                            889,577 hotels</p>
+                    </div>
+                    <div class="image1">
+                       <a href="last-booking-form.html"> <img src="image/h6.jpeg" alt=""></a>
+                        <p class="para">Hotels <br>
+                            889,577 hotels</p>
+                    </div>
+                    <div class="image1">
+                       <a href="last-booking-form.html"> <img src="image/h7.jpeg" alt=""></a>
+                        <p class="para">Hotels <br>
+                            889,577 hotels</p>
+                    </div>
+                </div><hr>
+                <div class="content5">
+                    <div class="h4">
+                        <h3>Homes guests love</h3>
+                    </div><hr>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+<!-- <script src="page.js"></script> -->
+<script> $(document).ready(function () {
+        $(".more-btn").on('click', function () {
+            $(this).parent().parent().find(".more-text").toggleClass("active");
+        });
+    });
+</script>
+
+</html>

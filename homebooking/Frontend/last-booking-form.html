@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resort booking form</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="first_project.css">
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-image: url('image/lastimg.jpg');
+        background-position: center;
+        background-size: auto;
+    }
+    #form{
+        background-color: rgb(0, 0, 0);
+        height:400px;
+        width:800px;
+        margin: auto;
+        margin-top: 100px;
+        opacity:0.7;
+    }
+    #first-group{
+        border:none;
+        width:400px;
+        margin-top: 38px;
+        position: absolute;
+    }
+    #content{
+        border: 1px solid #fff;
+        margin:10px;
+        margin-left: 8px;
+        padding:5px;
+    }
+    #content #input-group{
+        border:none;
+        outline:none;
+        background: transparent;
+        margin-left:8px;
+        width:300px;
+        color:#fff;
+    }
+    ::placeholder{
+        color:#fff;
+    }
+    .fa{
+        display:inline-block;
+        color:red;
+        border-right:1px solid #fff;
+        padding:8px;
+        margin-left: 8px;
+    }
+    #second-group{
+        border:none;
+        width:400px;
+        margin-top: 55px;
+        margin-left:400px;
+    }
+    #-btn{
+        margin-top: 30px;
+        margin-left: 600px;
+        background: transparent;
+        color:#fff;
+        width:150px;
+        border:1px solid red;
+        outline:none;
+        padding:10px;
+        font-size: 20px;
+    }
+    #result{
+        color: black;
+        margin-top: 20px;
+        font-size: 30px;
+        font-weight: bold;
+        margin-left: 50px;
+        
+    }
+    header ul {
+        
+        text-align: right;
+        justify-content: center;
+        height: 70px;
+        margin-top: 30px;
+        background-color: rgba(255, 255, 255, 0.484);
+        box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.251);
+    
+    }
+    .main ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 0px 20px;
+        margin-top: 20px;
+        color: black;
+        text-transform: uppercase;
+        position: relative;
+        text-decoration: none;
+        border: 1px solid transparent;
+        padding: 3px;
+        border-radius: 20px;
+    }
+    .main ul li:hover{
+        background-color: rgba(210, 190, 170, 0.2);
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+
+        <div class="navbar">
+    
+            <img src="image/homify.png" class="logo" height="10px" width="10px">
+    
+    
+    
+            <!-- <div class="search-form">
+                <input type="search" id="search-box" placeholder="search here......">
+                <label for="search-box" class="fas fa-search"></label>
+            </div> -->
+            <div class="icons">
+                <!-- <div class="fas fa-search" id="search-btn"></div> -->
+                <!-- <div class="fas fa-shopping-cart" id="cart-btn"></div> -->
+    
+                <!-- <div class="fas fa-bars" id="menu-btn"> -->
+    
+                </div>
+            </div>
+    
+    
+            <div>
+                <header>
+    
+                    <b>
+                        <ul>
+                            <!-- <li><img src="image/homify.png" class="logo" height="50px" width="50px"> -->
+                                <li style="margin-right: 400px; font-size:20px" <i class="fas fa-house-circle-exclamation"></i>Visit Our Home</li>
+    
+                            </li>
+                            <a href="/Softmusk.project.1/softmusk/login/index.html">
+                            <li style="cursor: pointer;">Home</li></a>
+                            <li><a href="https://www.homify.in/ideabooks/6141119/bedroom-design-inspirations-from-mumbai-homes"
+                                    style="text-decoration: none; color:black;">bedroom</a>
+                            </li>
+                            <li><a href="https://www.woodenstreet.com/modular-kitchen-designs"
+                                    style="text-decoration: none; color:black;">Kitchen</a></li>
+                            <li><a href="https://www.ikea.com/in/en/rooms/dining/"
+                                    style="text-decoration: none; color:black;">Dining</a>
+                            </li>
+                            <li><a href="https://www.thespruce.com/backyard-landscaping-ideas-4172952"
+                                    style="text-decoration: none; color:black;">Backyard</a>
+                            </li>
+                            <li> <a href="note.html"
+                                    style="text-decoration: none; color:black;">Notepad</a></li>
+                            <li><a href="page.html"
+                                    style="text-decoration: none; color:black;">About Us</a>
+                            </li>
+    
+                        </ul>
+    
+    
+    
+                        <br>
+                    </b>
+    
+    
+                </header>
+    
+            </div>
+        </div>
+    <div class="error"></div>
+    <div class="container">
+        <form class="form-group">
+            <div id="form">
+                <h1 class="text" style="color:white ;">For booking</h1>
+
+                <div id="first-group">
+
+                    <div id="content">
+                        <i class="fa fa-user" aria-hidden="true" ></i>
+                        <input type="text" id="input-group" placeholder="First name" required >
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <input type="number" id="input-group" placeholder="Phone number" required>
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-calendar" aria-hidden="true" style="cursor:pointer;"></i>
+                        <input type="date" id="input-group" placeholder="Departure Date" required>
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <select id="input-group" style="background-color: black;" required>
+                            <option value="">No.of guests</option>
+                            <option value="">1-5</option>
+                            <option value="">6-10</option>
+                            <option value="">11-20</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div id="second-group">
+
+                    <div id="content">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <input type="text" id="input-group" placeholder="Last name" required>
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <input type="email" id="input-group" placeholder="Email" required>
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-calendar" aria-hidden="true" style="cursor:pointer;"></i>
+                        <input type="date" id="input-group" placeholder="Arrival Date" required>
+                    </div>
+
+                    <div id="content">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <select id="input-group" style="background-color: black;" required>
+                            <option value="">Room Type</option>
+                            <option value="">AC</option>
+                            <option value="">Non-AC</option>
+                            <option value="">Single Bed</option>
+                            <option value="">Double Bed</option>
+                        </select>
+                    </div>
+            
+                </div>
+                <a href="infocheck.html">
+                <button type="button" value="Submit" id="-btn" style="cursor: pointer;">Book Now</button>
+            </a>
+            
+                <div id="result" ></div>
+
+            </div>
+        </form>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    
+
+    </script>
+</html>
